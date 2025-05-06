@@ -1,0 +1,158 @@
+
+/* Narrower Devices (e.g. iPhone SE, older Androids) */
+@media (max-width: 480px) and (max-height: 700px) {
+  .chatlog{
+    width: 80vw;
+  }
+  .chat-container{
+    height: 68%;
+  }
+  .talk-flx{
+    padding-top: calc(var(--vh) * 19);
+  }
+}
+
+/* Shorter Heights (e.g. small Androids or split-screen) */
+@media (max-width: 768px) and (max-height: 600px) {
+
+}
+
+/* Larger Phones / Small Tablets */
+@media (max-width: 1024px) and (max-height: 900px) {
+}
+
+/* laptops */
+@media (min-width: 1025px) and (max-height: 700px) {
+ .chatlog{
+  width: 55vw;
+ }
+ .chat-container {
+  height: 70%;
+  margin-right: 15rem;
+}
+.talk-flx{
+  padding-top: calc(var(--vh) * 17); 
+}
+.send-container {
+  gap: 15%;
+}
+#about-p1{
+  max-width: 36rem;
+}
+#about-p2{
+  max-width: 36rem;
+}
+#c-input1, #c-input2 {
+  height: 2.5rem;
+  font-size: small;
+}
+#c-text{
+  height: 8rem;
+  font-size: small;
+}
+#c-send{
+  height: 2rem;
+  font-size: small;
+  width: 5rem;
+}
+.contact-container {
+  padding-block: 3rem;
+  gap: 1.5rem
+}
+.send-talk {
+  margin-right: 15rem;
+}
+.nav {
+  padding: 12px 25px;
+}
+.main {
+  padding-top: 8rem;
+}
+.rest{
+  padding: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.chat-history {
+  position: fixed;
+  height: calc(var(--vh) * 66);
+  width: 20vw;
+  background-color:rgb(28, 27, 31);
+  right: 0;
+  transform: translateX(100%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  top: 18%;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: -5px -2px 10px rgba(0, 0, 0, 0.3);
+}
+.recent-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  text-align: left;
+  background-color: rgb(16, 15, 15);
+  padding: 10px;
+  border-radius: 10px;
+  height: 16rem;
+  overflow-y: auto;
+}
+.recent-list::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in WebKit-based browsers */
+}
+
+.recent-list {
+  -ms-overflow-style: none; /* Hides the scrollbar in IE/Edge */
+  scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
+.recent-h{
+  background-color: rgb(16, 15, 15);
+  padding: 5px;
+}
+.recent-li{
+  font-size: x-small;
+  font-weight: lighter;
+  background-color: rgba(77, 93, 107, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.recent-txt{
+  overflow: hidden;
+}
+.recent-date{
+  font-size: xx-small;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  z-index: 3;
+}
+.clear{
+  font-size: small;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+cursor: pointer;
+}
+.bck{
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  gap: 0.1rem;
+}
+.lft{
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+}
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Talk Flow</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <!-- ================================ Body ================================================== -->
+
+  <body style="background-color: rgb(31, 29, 29); color: white">
+
+    <div class="cover">
+      <div class="intro">
+        <img width="60px" src="/images/Logo 2.png" alt="">
+        <h1>Talk Flow</h1>
+      </div>
+    </div>
+    <!-- ====================================== Nav ============================================= -->
+    <div class="nav">
+      <div class="logo-container">
+        <img width="50px" src="/images/Logo 2.png" alt="" />
+        <h1>Talk Flow</h1>
+      </div>
+      <div class="togglers">
+        <i class="fa-solid fa-clock-rotate-left rest"></i>
+        <i class="fa-solid fa-bars menu"></i>
+      </div>
+     
+    </div>
+
+    <!-- ===============  Link - Box ==================================================== -->
+    <div id="linkBox" class="link-box">
+      <div class="link-menu">
+        <a href="#main"
+          ><i class="fa-solid fa-caret-left close-menu">Back</i></a
+        >
+      </div>
+      <section id="main" class="main">
+        <ul>
+          <li id="talk" class="links">
+            <a href="#home"
+              ><img width="30px" src="/images/Logo 2.png" alt="" /> Talk Flow</a
+            >
+          </li>
+          <li class="links">
+            <a id="about-l" href="#about" 
+              ><i
+                class="fa-solid fa-address-card"
+                style="color: rgb(19, 120, 214)"
+              ></i>
+              About</a
+            >
+          </li>
+          <li class="links">
+            <a href="#contact" 
+              ><i
+                class="fa-solid fa-address-book"
+                style="color: rgb(19, 120, 214)"
+              ></i>
+              Contact</a
+            >
+          </li>
+          <li class="links">
+            <a class="m-history" href=""
+              ><i
+                class="fa-solid fa-clock-rotate-left"
+                style="color: rgb(19, 120, 214)"
+              ></i>
+              Chat History</a
+            >
+          </li>
+        </ul>
+        <span style="padding-left: 2rem; font-size: 18px; cursor: pointer">
+          <a href="#" onclick="location.reload()"
+            ><i class="fa-solid fa-right-from-bracket"></i> Log out</a
+          ></span
+        >
+        <img
+          class="pattern"
+          style="position: absolute; right: 0; top: 16%"
+          src="/images/image 10.png"
+          alt=""
+        />
+        <img
+          class="pattern"
+          style="position: absolute; right: 0; top: 14%"
+          src="/images/image 9.png"
+          alt=""
+        />
+      </section>
+      <!-- ======================== About ======================= -->
+      <section class="about" id="about">
+        <div id="about-h1">
+          <h1>About Me</h1>
+        </div>
+
+        <div class="about-container">
+          <p id="about-p1">
+            Hi, I'm Usman, the creator of Talk Flow — a platform designed to
+            make AI conversations smoother, faster, and more intuitive. Talk
+            Flow started with a simple idea that communication should feel
+            natural and effortless. With a focus on clean design, responsive
+            performance, and real user experience, my goal is to make every
+            interaction effortless and engaging. I'm passionate about building
+            projects that combine logic, creativity, and simplicity — and Talk
+            Flow is a reflection of that vision. Thank you for visiting and
+            being part of the flow.
+          </p>
+          <br />
+          <p id="about-p2">
+            Talk Flow is a dynamic chat application that connects to the Google
+            Gemini API to deliver real-time conversational responses. This
+            project showcases my ability to integrate external APIs, manage
+            asynchronous operations efficiently, and build seamless, responsive
+            user experiences. It reflects my skills in handling real-time data,
+            structuring clean API calls, and creating intuitive, modern web
+            applications.
+          </p>
+        </div>
+      </section>
+      <!-- ======================== Contact ======================================================
+        -->
+      <section id="contact" class="contact">
+        <div id="contact-h1">
+          <h1>Lets Talk !</h1>
+        </div>
+        <div class="contact-container">
+          <input
+            id="c-input1"
+            type="text"
+            name="name"
+            autocomplete="off"
+            placeholder="Enter your Name "
+          />
+          <input
+            id="c-input2"
+            type="text"
+            autocomplete="off"
+            placeholder="Email "
+          />
+          <textarea name="" id="c-text" placeholder="Your Message"></textarea>
+          <button id="c-send">
+            <i class="fa-solid fa-paper-plane"></i> Send
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ====================== TALK FLOW ===================================================================
+ -->
+    <div class="chat-history">
+      <div class="bck"><i class="fa-solid fa-left-long lft"></i></i>
+        <div class="recent-h">Recent</div>
+      </div>
+      
+     <div class="recent">
+      <ul class="recent-list">
+       
+      </ul>
+      <span class="clear"><i class="fa-solid fa-broom broom"></i><span>delete</span></span>
+     </div>
+    </div>
+
+
+
+    <div class="talk-flx">
+      <div class="chat-container">
+        <div id="chatlog" class="chatlog">
+          <div class="loading">
+            <img class="loading-img" src="/images/Logo 2.png" alt="" />
+            <span id="dots">. . .</span>
+          </div>
+        </div>
+      </div>
+  <div class="send-container">
+    <div id="send-talk" class="send-talk">
+      <img id="send-img" src="/images/Logo 2.png" alt="" />
+    </div>
+
+    <textarea
+      class="talk-input"
+      name=""
+      id="talk-input"
+      placeholder="Write anything.."
+    ></textarea>
+  </div>
+     
+    </div>
+  
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "4n1J3V9LYZNvOb3LX",
+        });
+      })();
+    </script>
+  </body>
+</html>
