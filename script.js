@@ -189,7 +189,7 @@ let appendChat = (x) => {
 
   } else if (x.from === "ai") {
 
-    let html = `<img class="chat-logo" id="chat-logo" src="/images/Logo 2.png" alt="">
+    let html = `<img class="chat-logo" id="chat-logo" src="images/Logo 2.png" alt="">
        <p class="output"></p>
        <div class="compliments">
          <div class="icons"> <i class="fa-solid fa-copy copy cons"></i>
